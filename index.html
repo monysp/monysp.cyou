@@ -10,11 +10,17 @@
     <meta property="og:url" content="https://monruchy.cyou ">
     <meta property="og:site_name" content="monruchy.cyou ">
     <meta property="og:type" content="website">
+    <script>
+      const emojis = ["💖", "👾", "👻", "👽"];
+      setInterval(function() {
+        document.title = `monruchy.cyou | ${emojis[~~(Math.random() * emojis.length)]}`;
+      }, 1000);
+    </script>
   </head>
   <body class="overflow-x-hidden bg-catppuccin-dark text-catppuccin-milk font-mono">
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
- 
+
 
