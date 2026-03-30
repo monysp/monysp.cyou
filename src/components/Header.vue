@@ -228,7 +228,7 @@ onUnmounted(() => {
   <div
     class="font-sans font-black text-5xl rainbow-text"
   >
-    monruchy.cyou
+    monysp.cyou
   </div>
   <div class="text-catppuccin-gray text-lg font-mono tracking-wide mb-2">
     passionate about code, music, sports, chemistry, and math.
@@ -308,7 +308,7 @@ onUnmounted(() => {
       />
     </a>
     <a
-      href="https://www.instagram.com/monruchy"
+      href="https://www.instagram.com/mon.ysp"
       target="_blank"
       class="flex items-center justify-center w-12 h-12 rounded-xl border border-catppuccin-gray bg-opacity-10 transition-colors duration-200 group"
       style="background-color: rgba(255,255,255,0.01);"
