@@ -1,3 +1,4 @@
-# monruchy.cyou
 
-<img width="2557" height="1319" alt="site" src="https://github.com/user-attachments/assets/61cf5641-41b1-4a80-bbd3-9d4c174c7cc5" />
+# monysp.cyou
+
+<sub>17.2715371403 y/o dumbo. building stuff and learning along the way.</sub>

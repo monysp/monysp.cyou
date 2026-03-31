@@ -238,10 +238,16 @@ onUnmounted(() => {
     <div><span class="text-catppuccin-blue">discord</span> : <span class="text-catppuccin-gray">tls6</span> <span class="text-catppuccin-gray">[</span><span :class="{ 'text-catppuccin-green': discordStatus === 'online', 'text-catppuccin-yellow': discordStatus === 'idle', 'text-catppuccin-red': discordStatus === 'do not disturb', 'text-catppuccin-gray': discordStatus === 'offline' }">{{ discordStatus }}</span><span class="text-catppuccin-gray">]</span></div>
     <div><span class="text-catppuccin-green">spotify</span> : <span class="text-catppuccin-gray" v-if="spotify">{{ spotify.song }} - {{ spotify.artist }}</span><span class="text-catppuccin-gray" v-else>not playing</span></div>
   </div>
-  <div v-if="vscodeActivity" class="text-sm mt-2 text-catppuccin-gray">
+  <div v-if="vscodeActivity" class="text-sm mt-2">
     <span class="text-catppuccin-cyan">code</span>
-    <span v-if="typeof vscodeStatus === 'string'">: {{ vscodeStatus }}</span>
-    <span v-else-if="vscodeStatus">: <span class="text-catppuccin-yellow">{{ vscodeStatus.details }}</span></span>
+    <span class="text-catppuccin-gray">:</span>
+    <span v-if="typeof vscodeStatus === 'string'" class="text-catppuccin-gray">{{ vscodeStatus }}</span>
+    <span v-else-if="vscodeStatus" class="text-catppuccin-gray">
+      <span class="text-catppuccin-yellow">{{ vscodeStatus.details }}</span>
+      <span class="text-catppuccin-gray">in</span>
+      <span class="text-catppuccin-blue">Workspace:</span>
+      <span class="text-catppuccin-green">{{ vscodeStatus.state }}</span>
+    </span>
   </div>
 
   <div class="flex gap-6 mt-5 text-xl">
